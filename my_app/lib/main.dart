@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'blocs/cart_cubit.dart';
+import 'pages/cart_home_page.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key}); // ← tambah key & const di sini
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (_) => CartCubit(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: const CartHomePage(), // ← tambahkan const jika widget mendukung
+      ),
+    );
+  }
+}
