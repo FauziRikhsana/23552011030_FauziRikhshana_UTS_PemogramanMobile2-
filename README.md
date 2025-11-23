@@ -1,8 +1,5 @@
 # 📘 Jawaban Teori – Pemrograman Mobile (Cubit & Bloc)
 
-## A. Jawaban Teori (3 Soal × 10 Poin)
-
----
 
 ## 1️⃣ Perbedaan Cubit vs Bloc
 
